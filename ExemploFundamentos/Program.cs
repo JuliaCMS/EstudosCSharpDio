@@ -1,4 +1,7 @@
-﻿// Operadores
+﻿using ExemploFundamentos.Models;
+
+
+// Operadores
 
 // int quantidadeEmEstoque = 10;
 // int quantidadeCompra = 5;
@@ -31,20 +34,46 @@
 
 // Switch-Case
 
-Console.WriteLine("Digite uma letra: ");
-string letra = Console.ReadLine();
+// Console.WriteLine("Digite uma letra: ");
+// string letra = Console.ReadLine();
 
-switch (letra)
-{
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("vogal");
-        break;
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("vogal");
+//         break;
 
-    default:
-        Console.WriteLine("não é vogal");
-        break;
-}
+//     default:
+//         Console.WriteLine("não é vogal");
+//         break;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Calculadora
+
+Calculadora calculadora = new Calculadora();
+
+calculadora.Somar(3, 5);
+calculadora.Subtrair(8, 4);
+calculadora.Multiplicar(2, 8);
+calculadora.Dividir(18, 9);
+calculadora.Potencia(2, 6);
