@@ -1,4 +1,6 @@
-﻿using ExemploFundamentos.Models;
+﻿using System.Globalization;
+using System.Runtime.CompilerServices;
+using ExemploFundamentos.Models;
 
 
 // Operadores
@@ -189,40 +191,141 @@
 
 // MENU INTERATIVO
 
-int opcao;
-bool continuar = true;
+// int opcao;
+// bool continuar = true;
 
-while (continuar)
+// while (continuar)
+// {
+//     System.Console.WriteLine("OPÇÕES");
+//     Console.WriteLine("Opçao 1 - Cadastrar cliente.");
+//     Console.WriteLine("Opçao 2 - Buscar cliente.");
+//     Console.WriteLine("Opçao 3 - Apagar cliente.");
+//     Console.WriteLine("Opçao 4 - Encerrar.");
+//     Console.Write("Digite a sua opção: ");
+//     opcao = Convert.ToInt32(Console.ReadLine());
+
+//     switch (opcao)
+//     {
+//         case 1:
+//             Console.WriteLine("Cadastrar Cliente.");
+//             break;
+
+//         case 2:
+//             Console.WriteLine("Buscar cliente.");
+//             break;
+
+//         case 3:
+//             Console.WriteLine("Apagar Cliente.");
+//             break;
+
+//         case 4:
+//             Console.WriteLine("Encerrar.");
+//             continuar = false;
+//             break;
+
+//         default:
+//             System.Console.WriteLine("Opcao Inválida");
+//             break;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Array
+
+// Formas de escrever:
+// int[] numeros = { 1, 2, 3, 4 };
+// string[] nomes = new string[4] { "Julia", "Caio", "Rosi", "etc" };
+// int[] exemplo = new int[4];
+// exemplo[0] = 1;
+// Console.WriteLine(nomes[4]);
+
+
+
+
+// int[] inteiros = new int[3];
+// inteiros[0] = 34;
+// inteiros[1] = 65;
+// inteiros[2] = 79;
+
+// for (int i = 0; i < inteiros.Length; i++)
+// {
+//     System.Console.WriteLine($"Indice {i}: {inteiros[i]}");
+// }
+
+// int contadorForeach = 0;
+// foreach (int valor in inteiros)
+// {
+//     System.Console.WriteLine($"posição {contadorForeach}: {valor}");
+//     contadorForeach++;
+// }
+
+// Array.Resize(ref inteiros, 7);
+
+// inteiros[3] = 54;
+// inteiros[4] = 4;
+// inteiros[5] = 98;
+// inteiros[6] = 23;
+
+// System.Console.WriteLine(inteiros[5]);
+
+// int[] arrayDobrados = new int[inteiros.Length * 2];
+// Array.Copy(inteiros, arrayDobrados, inteiros.Length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Listas
+
+List<string> listaEstados = new List<string>();
+
+listaEstados.Add("SP");
+listaEstados.Add("BA");
+
+System.Console.WriteLine("Percorrendo com o FOR");
+for (int i = 0; i < listaEstados.Count; i++)
 {
-    System.Console.WriteLine("OPÇÕES");
-    Console.WriteLine("Opçao 1 - Cadastrar cliente.");
-    Console.WriteLine("Opçao 2 - Buscar cliente.");
-    Console.WriteLine("Opçao 3 - Apagar cliente.");
-    Console.WriteLine("Opçao 4 - Encerrar.");
-    Console.Write("Digite a sua opção: ");
-    opcao = Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine($"Posicão {i}: {listaEstados[i]}");
+}
 
-    switch (opcao)
-    {
-        case 1:
-            Console.WriteLine("Cadastrar Cliente.");
-            break;
-
-        case 2:
-            Console.WriteLine("Buscar cliente.");
-            break;
-
-        case 3:
-            Console.WriteLine("Apagar Cliente.");
-            break;
-
-        case 4:
-            Console.WriteLine("Encerrar.");
-            continuar = false;
-            break;
-
-        default:
-            System.Console.WriteLine("Opcao Inválida");
-            break;
-    }
+System.Console.WriteLine("Percorrendo com o ForEach");
+foreach (string item in listaEstados)
+{
+    System.Console.WriteLine(item);
 }
