@@ -11,6 +11,19 @@ namespace ExemploExplorando.Models
         private int _idade;
         private string _sobrenome;
 
+        // Construtores 
+        public Pessoa()
+        {
+
+        }
+
+        public Pessoa(string nome, string sobrenome)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
+
+        // Propriedades
         public string Nome
         {
             get => _nome.ToUpper();
@@ -45,6 +58,7 @@ namespace ExemploExplorando.Models
             set => _sobrenome = value;
         }
 
+        // Métodos
         public string NomeCompleto => Nome + " " + Sobrenome;
 
         public void Apresentar()
